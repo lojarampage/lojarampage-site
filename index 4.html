@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rampage Store</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #1c1c1e;
+    }
+    header {
+      background-color: #000;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+    nav a {
+      color: #fff;
+      margin-left: 1rem;
+      text-decoration: none;
+    }
+    section {
+      padding: 2rem;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    .hero {
+      text-align: center;
+    }
+    .hero img {
+      max-width: 100%;
+      height: auto;
+    }
+    .cta-button {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 1rem 2rem;
+      background-color: #0071e3;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    footer {
+      background-color: #f2f2f2;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+    h2 {
+      color: #0071e3;
+    }
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+    .card {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      padding: 1.5rem;
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card strong {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-size: 1rem;
+      color: #1c1c1e;
+    }
+    .catalogo-scroll {
+      display: flex;
+      overflow-x: auto;
+      gap: 1rem;
+      padding: 1rem 0;
+    }
+    .catalogo-item {
+      flex: 0 0 auto;
+      width: 200px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      padding: 1rem;
+      text-align: center;
+    }
+    .catalogo-item img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Rampage</h1>
+    <nav>
+      <a href="#produtos">Modelos</a>
+      <a href="#diferenciais">Diferenciais</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Seu iPhone original com garantia e segurança</h2>
+    <p>Modelos disponíveis com brindes e entrega em Manaus</p>
+    <a class="cta-button" href="https://wa.me/5592994367074">Fale conosco pelo WhatsApp</a>
+  </section>
+
+  <section id="produtos">
+    <h2>Modelos em destaque</h2>
+    <ul>
+      <li>iPhone 13 - A partir de R$3.499</li>
+      <li>iPhone 12 Pro Max - A partir de R$4.199</li>
+      <li>iPhone 11 - A partir de R$2.799</li>
+    </ul>
+    <p><a class="cta-button" href="https://wa.me/5592994367074">Ver todos os modelos</a></p>
+  </section>
+
+  <section id="diferenciais">
+    <h2>Diferenciais da Rampage</h2>
+    <div class="card-grid">
+      <div class="card">
+        <strong>Conteúdo Educacional</strong>
+        Vídeos e dicas para você aproveitar ao máximo seu iPhone.
+      </div>
+      <div class="card">
+        <strong>Serviços Exclusivos</strong>
+        Configuração inicial, backup, transferência de dados e suporte técnico.
+      </div>
+      <div class="card">
+        <strong>Programas de Fidelidade e Troca</strong>
+        Descontos especiais para clientes fiéis e troca de aparelhos usados.
+      </div>
+      <div class="card">
+        <strong>Experiência do Cliente</strong>
+        Atendimento personalizado do Instagram ao pós-venda.
+      </div>
+      <div class="card">
+        <strong>Campanhas de Conscientização</strong>
+        Informações claras sobre os riscos do mercado cinza.
+      </div>
+      <div class="card">
+        <strong>Garantias e Suporte</strong>
+        3 meses de garantia da loja e 1 ano de garantia Apple para aparelhos lacrados.
+      </div>
+    </div>
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <p><strong>WhatsApp:</strong> <a href="https://wa.me/5592994367074">(92) 99436-7074</a></p>
+    <p><strong>Email:</strong> <a href="mailto:rampage.loja@gmail.com">rampage.loja@gmail.com</a></p>
+    <p><strong>Endereço:</strong><br />
+      Fórum Business Center Manaus<br />
+      Av. André Araújo, 97 - Adrianópolis<br />
+      Andar 10 • Sala 1004
+    </p>
+  </section>
+
+  <section>
+    <h2>Catálogo de iPhones</h2>
+    <div class="catalogo-scroll">
+      <div class="catalogo-item">
+        <img src="https://via.placeholder.com/200x200?text=iPhone+13" alt="iPhone 13" />
+        <p>iPhone 13</p>
+      </div>
+      <div class="catalogo-item">
+        <img src="https://via.placeholder.com/200x200?text=iPhone+12+Pro+Max" alt="iPhone 12 Pro Max" />
+        <p>iPhone 12 Pro Max</p>
+      </div>
+      <div class="catalogo-item">
+        <img src="https://via.placeholder.com/200x200?text=iPhone+11" alt="iPhone 11" />
+        <p>iPhone 11</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Rampage Store — Todos os direitos reservados
+  </footer>
+</body>
+</html>
